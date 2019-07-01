@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>SMA N 1 Piyungan</title>
+	
+	<link href="assets/img/fav-logo.png" rel="icon" type="image/x-icon" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+</head>
+<body>
+	<div ng-include="'assets/template/header.html'"></div>
+	<div ng-include="'assets/template/navbar.html'"></div>
+
+<section class="content">
+	<div class="container mb-3 mt-5">
+		<div class="row">
+			<div class="col-md-4 col-sm-xs-12 mb-4" ng-repeat="x in [].constructor(6) track by $index">
+				<div class="modal fade" id="modal{{$index+1}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-body mb-0 p-0">
+								<div class="">
+									<img class="item" ng-src="assets/img/album{{ $index+1 }}.jpg" style="width: 100%">
+								</div>
+							</div>
+							<div class="modal-footer justify-content-center">
+								<span class="mr-4">Spread the word!</span>
+								<button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a>
+					<img class="img-fluid z-depth-1" ng-src="assets/img/album{{ $index+1 }}.jpg" alt="image" data-toggle="modal" data-target="#modal{{$index+1}}" style="height: 200px; width: 100%; object-fit: cover;">
+				</a>
+			</div>
+		</div>
+	</div>
+	
+</section>
+	<div ng-include="'assets/template/footer.html'"></div>
+
+</div>
+
+	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+
+</body>
+</html>

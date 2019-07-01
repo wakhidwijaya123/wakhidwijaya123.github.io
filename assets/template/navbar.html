@@ -1,0 +1,82 @@
+
+<nav class="navbar navbar-expand-md navbar-dark mb-3 p-1">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mx-auto">
+
+      <li class="nav-item pl-sm-2 pr-md-3">
+        <a class="nav-link text-light" href="./index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item pl-sm-2 pr-md-3">
+        <a class="nav-link text-light" href="./profil.html">Profile</a>
+      </li>
+      <li class="nav-item dropdown pl-sm-2 pr-md-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Akademik
+      </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-light" href="./kurikulum.html">Kurikulum</a>
+          <a class="dropdown-item text-light" href="./kalender.html">Kalender Akademik</a>
+        </div>
+      </li>
+      <li class="nav-item pl-sm-2 pr-md-3">
+        <a class="nav-link text-light" href="./galeri.html">Galeri</a>
+      </li>
+      <li class="nav-item pl-sm-2 pr-md-3">
+        <a class="nav-link text-light" href="./blog.html">Blog</a>
+      </li>
+     
+      <li class="nav-item pl-sm-2 pr-md-3">
+        <a class="nav-link text-light" href="./kontak.html">Hubungi Kami</a>
+      </li>
+
+      <li class="nav-item pl-sm-2 pr-md-3 d-none d-md-block pt-1">
+        <form class="form-inline">
+          <input class=" input-sm form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-sm btn-outline-light my-2 my-sm-0" type="submit"><span class="fa fa-search"></span></button>
+        </form>
+      </li>
+      
+      <li class="nav-item d-lg-none d-md-none">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-light btn-sm btn-block" data-toggle="modal" data-target="#exampleModal">
+      Search <i class="fa fa-search"></i>
+      </button>
+
+      <!-- Modal -->
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Search Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="searchInput" class="bmd-label-floating">Search</label>
+            <input type="email" class="form-control" id="searchInput">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span class="form-group bmd-form-group align-items-end">
+        <!-- needed to match padding for floating labels -->
+          <button type="submit" class="btn btn-sm btn-primary">Search
+            <i class="fas fa-search"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

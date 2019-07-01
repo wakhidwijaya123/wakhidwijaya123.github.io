@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app >
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>SMA N 1 Piyungan</title>
+	
+	<link href="assets/img/fav-logo.png" rel="icon" type="image/x-icon" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/lib/fullcalendar/main.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/lib/fullcalendar/daygrid.css">
+	<link rel="stylesheet" type="text/css" href="assets/lib/fullcalendar/timegrid.css">
+	<link rel="stylesheet" type="text/css" href="assets/lib/fullcalendar/list.css">
+	<link rel="stylesheet" type="text/css" href="assets/lib/fullcalendar/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+</head>
+<body>
+	<div ng-include="'assets/template/header.html'"></div>
+	<div ng-include="'assets/template/navbar.html'"></div>
+
+	<section class="content">
+		<div class="container mb-3 mt-5">
+			<h5 class="page-title mb-5">Kalender Akademik</h5>
+			<div class="col-md-8 offset-md-2 col-sm-xs-2">
+				<div id="calendar"></div>
+			</div>
+			<div class="text-center p-5">
+				<a href="./assets/data/kalender.pdf" download class="btn btn-sm btn-outline-primary">Download Kalender</a>
+			</div>
+		</div>
+	</section>
+
+	<div ng-include="'assets/template/footer.html'"></div>
+
+	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/lib/fullcalendar/main.min.js"></script>
+	<script type="text/javascript" src="assets/lib/fullcalendar/daygrid.js"></script>
+	<script type="text/javascript" src="assets/lib/fullcalendar/timegrid.js"></script>
+	<script type="text/javascript" src="assets/lib/fullcalendar/list.js"></script>
+	<script type="text/javascript" src="assets/lib/fullcalendar/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/js/calendar.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>SMA N 1 Piyungan</title>
+	
+	<link href="assets/img/fav-logo.png" rel="icon" type="image/x-icon" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+</head>
+<body>
+	<div ng-include="'assets/template/header.html'"></div>
+	<div ng-include="'assets/template/navbar.html'"></div>
+
+	<section class="content">
+		<div class="container p-0 mb-3">
+			<div class="googleMap col-md-8 offset-md-2 col-sm-xs-12 mt-5" id="googleMap"></div>
+			<div class="border col-md-8 offset-md-2 col-sm-xs-12 text-right mt-5 mb-5">
+				<form action="javascript:void(0)" class="form-horizontal mt-3" name="contactForm" ng-model="contactForm">
+					<div class="form-group d-md-flex">
+						<label class="col-md-3 control-label">Nama Lengkap <span class="text-danger">*</span> </label>
+						<div class="col-md-9">
+							<input type="text" name="nama" class="form-control" ng-model="nama" ng-required="true">
+
+							<span class="text-danger" ng-show="contactForm.nama.$dirty && contactForm.nama.$error.required">The input field cannot be empty</span>
+						</div>
+					</div>
+					<div class="form-group d-md-flex">
+						<label class="col-md-3 control-label">Email <span class="text-danger">*</span> </label>
+						<div class="col-md-9">
+							<input type="email" name="email" class="form-control" ng-model="email" ng-required="true">
+							<span class="text-danger" ng-show="contactForm.email.$dirty && contactForm.email.$error.required">The input field cannot be empty</span>
+
+						</div>
+					</div>
+					<div class="form-group d-md-flex">
+						<label class="col-md-3 control-label">Pesan <span class="text-danger">*</span> </label>
+						<div class="col-md-9">
+							<textarea type="text" name="pesan" class="form-control" ng-model="pesan" ng-required="true"></textarea>
+							<span class="text-danger" ng-show="contactForm.pesan.$dirty && contactForm.pesan.$error.required">The input field cannot be empty</span>
+						</div>
+					</div>
+					<div class="form-group col-md-9 offset-md-3">
+						<div class="g-recaptcha" data-sitekey="6LddY6sUAAAAABTG4ipWHYZQiBaOrl-J4WKwLH9V"></div>
+					</div>
+					<div class="form-group pull-md-right mr-md-3">
+						<button type="submit" name="kirim" ng-disabled="!contactForm.$valid" class="btn btn-sm btn-primary">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</section>
+	<div ng-include="'assets/template/footer.html'"></div>
+
+	<a href="#" title="scrollup"><i class="fa fa-arrow-up scrlup d-none" aria-hidden="true"></i></a>
+	<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+	
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8Em6tTACQj_-l6413GCT5iN6PoDXGKlo&callback=initMap">
+    </script>
+
+	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+
+</body>
+</html>

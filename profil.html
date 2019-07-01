@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>SMA N 1 Piyungan</title>
+	
+	<link href="assets/img/fav-logo.png" rel="icon" type="image/x-icon" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+</head>
+<body>
+	<div ng-include="'assets/template/header.html'"></div>
+	<div ng-include="'assets/template/navbar.html'"></div>
+
+	<section class="content">
+		<div class="container mb-3">
+			<div class="col-md-6 col-sm-xs-12 text-xs-sm-center">
+				<a href="#" class="mr-3">
+					<span class="btn sejarahbtn btn-sm btn-outline-primary my-2 my-sm-0 active profile" aria-hidden="true"> Sejarah</span>
+				</a>
+				<a href="#" class="mr-3">
+					<span class="btn visibtn btn-sm btn-outline-primary my-2 my-sm-0 profile" aria-hidden="true"> Visi & Misi</span>
+				</a>
+				<a href="#" class="mr-3">
+					<span class="btn prestasibtn btn-sm btn-outline-primary my-2 my-sm-0 profile" aria-hidden="true"> Prestasi</span>
+				</a>
+			</div>
+
+			<div class="col-12 pt-3 d-md-flex">
+				<div class="col-md-5 col-sm-xs-12">
+					<div id="myCarousel" class="container mt-2 carousel slide" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<img src="./assets/img/album1.jpg" alt="Chania" width="460" height="345">
+							</div>
+							<div class="carousel-item">
+								<img src="./assets/img/album2.jpg" alt="Chania" width="460" height="345">
+							</div>
+							<div class="carousel-item">
+								<img src="./assets/img/album3.png" alt="Chania" width="460" height="345">
+							</div>
+						</div>
+							<a class="left carousel-control-prev" href="javascript:void(0)" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control-next" href="javascript:void(0)" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+					</div>
+				</div>
+				<div class="sejarah col-md-7 col-sm-xs-12 text-justify">
+					<h5 class="page-title mb-3 mt-xs-2">Sejarah Sekolah</h5>
+					<p>SMAN 1 Piyungan Bantul mulai operasional sebagai filial dari SMAN 1 Banguntapan sejak tahun ajaran 1991/1992 dengan Kepala Sekolah Ibu Dra. Tumi Raharjo, dan sudah menempati gedung baru bertempat di Karanggayam, Sitimulyo, Piyungan, Bantul yang diresmikan pada bulan Agustus tahun 1991 oleh Kakanwil Departemen Pendidikan Dan Kebudayaan Propinsi Daerah Istimewa Yogyakarta yaitu Bpk Drs Sulistiyo. </p>
+
+					<p>Fasilitas yang dimiliki pada saat itu adalah 4 ruang kelas, 1 ruang Kepala sekolah,  1 ruang TU, 1 ruang Guru, 1 ruang Perpustakaan, 1 ruang Laboratorium IPA, dan jumlah karyawan tidak tetap sebanyak 2 orang, guru tetap 2 orang. Selebihnya sebagai pelaksana harian TU dan guru mata pelajaran berasal dari SMAN 1 Banguntapan. Jumlah kelas paralel adalah 2, dan merupakan peserta didik angkatan pertama yang berjumlah 80 orang. Dalam perjalanan filial, kepala sekolah berganti dari Ibu Dra Tumi Raharjo kepada Bpk R Sugito BA.</p>
+				</div>
+				<div class="visi col-md-7 col-sm-xs-12 text-justify d-none">
+					<h5 class="page-title mb-3 mt-xs-2">Visi & Misi</h5>
+					<h6 class="font-weight-bold">VISI</h6>
+					<i class="pl-md-4">Terwujudnya siswa yang santun, berprestasi, dan mandiri (TUNTASDIRI)</i>
+					</br>
+					</br>
+					<h6 class="font-weight-bold">MISI</h6>
+					<ol>
+						<li>Menyelenggarakan pendidikan berkarakter yang berorientasi pada iman dan taqwa (imtaq) serta pendidikan humaniora</li>
+						<li>Memaksimalkan penyelenggaraan pendidikan dengan memanfaatkan ilmu pengetahuan, teknologi, dan seni</li>
+						<li>Memberikan bekal ilmu pengetahuan untuk melanjutkan ke jenjang pendidikan yang lebih tinggi</li>
+						<li>Membekali pelajaran ketrampilan dan kewirausahaan dalam kegiatan intra dan ekstra kurikuler</li>
+					</ol>
+				</div>
+				<div class="prestasi col-md-7 col-sm-xs-12 text-justify d-none">
+					<h5 class="page-title mb-3 mt-xs-2">Prestasi</h5>
+					<div class="container table-responsive">
+					<table class="table table-sm table-hover table-striped table-bordered">
+						<tbody>
+							<tr class="collapsetable " data-toggle="collapse" data-target="#Colsakademik">
+								<th colspan="3">Bidang Akademik <span class="fa pull-right"></span> </th>
+							</tr>
+						</tbody>
+						<tbody id="Colsakademik" class="collapse show  text-center ">
+							<tr class="table-primary font-weight-bold">
+								<td>Tahun</td>
+								<td>Bidang</td>
+								<td>Juara</td>
+							</tr>
+							<tr>
+								<td>1996</td>
+								<td>LCT UKS Tk. SLTA</td>
+								<td>I Kab.</td>
+							</tr>
+							<tr>
+								<td>1997</td>
+								<td>CCA Tk. SMU</td>
+								<td>III Kab.</td>
+							</tr>
+							<tr>
+								<td>2002</td>
+								<td>LCC Permuseuman</td>
+								<td>II Kab.</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="collapsetable" data-toggle="collapse" data-target="#colsolahraga">
+								<th colspan="3">Bidang Olahraga <span class="fa pull-right"></span> </th>
+							</tr>
+						</tbody>
+						<tbody id="colsolahraga" class="collapse text-center ">
+							<tr class="table-primary font-weight-bold">
+								<td>Tahun</td>
+								<td>Bidang</td>
+								<td>Juara</td>
+							</tr>
+							<tr>
+								<tr><td>1992</td><td>Lari Jarak Jauh</td><td>I Kab.</td></tr>
+								<tr><td>1993</td><td>Pengembaraan Oktober Tradisional</td><td>III Kec.</td></tr>
+								<tr><td>1994</td><td>Sepak Bola Shinta Daya Cup</td><td>III Kab.</td></tr>
+								<tr><td>1994</td><td>Perjalanan Bhakti Pramuka</td><td>III Kab.</td></tr>
+								<tr><td>1995</td><td>Invitasi Bola Volley</td><td>III Prop.</td></tr>
+								<tr><td>1995</td><td>Bulutangkis Pelajar SLTA</td><td>II Prop.</td></tr>
+								<tr><td>1999</td><td>Lomba TUS SLTA</td><td>II Kab.</td></tr>
+								<tr><td>2000</td><td>Lomba Gerak Jalan Dewasa Putra</td><td>II Kec.</td></tr>
+								<tr><td>2001</td><td>Gerak Jalan Saka Bhakti Husada</td><td>III Kab.</td></tr>
+								<tr><td>2001</td><td>BMX Super Cross 2001 Zig Zag</td><td>I Nasional</td></tr>
+								<tr><td>2005</td><td>Kejurda Bola Volley</td><td>IV Kab.</td></tr>
+								<tr><td>2007</td><td>Kejuaran Gulat</td><td>II Kab.</td></tr>
+								<tr><td>2007</td><td>Karate</td><td>II Kab.</td></tr>
+								<tr><td>2009</td><td>Karate</td><td>III Kab</td></tr>
+								<tr><td>2009</td><td>Karate</td><td>I Kab</td></tr>
+								<tr><td>2010</td><td>Lari 5000 m</td><td>I Kab</td></tr>
+								<tr><td>2010</td><td>Karate</td><td>I Kab</td></tr>
+								<tr><td>2010</td><td>Karate</td><td>II Kab</td></tr>
+								<tr><td>2010</td><td>Karate</td><td>III Kab</td></tr>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="collapsetable" data-toggle="collapse" data-target="#colsseni">
+								<th colspan="3">Bidang Seni <span class="fa pull-right"></span> </th>
+							</tr>
+						</tbody>
+						<tbody id="colsseni" class="collapse text-center">
+							<tr class="table-primary font-weight-bold">
+								<td>Tahun</td>
+								<td>Bidang</td>
+								<td>Juara</td>
+							</tr>
+							<tr>
+								<tr><td>1993</td><td>Lomba Poster UKS</td><td>II Kab.</td><tr>
+								<tr><td>1995</td><td>MTQ Tk. SLTA Putra</td><td>I Kab.</td><tr>
+								<tr><td>1995</td><td>MTQ Tk. SLTA Putra</td><td>I Prop.</td><tr>
+								<tr><td>1996</td><td>Lomba Adzan RCTI</td><td>Harapan I Nasional</td><tr>
+								<tr><td>1998</td><td>Lomba Wawasa Wiyata Mandala</td><td>II Kab.</td><tr>
+								<tr><td>2001</td><td>Lomba Mading Tk. SLTA</td><td>I Kab.</td><tr>
+								<tr><td>2004</td><td>Lomba Pidato</td><td>III Kab.</td><tr>
+								<tr><td>2004</td><td>Lomba Seni Kriya Tk. SMA/SMK</td><td>I Kab.</td><tr>
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+				</div>
+			</div>	
+		</div>
+		
+	</section>
+	<div ng-include="'assets/template/footer.html'"></div>
+
+	<a href="#" title="scrollup"><i class="fa-arrow-up scrlup d-none" aria-hidden="true"></i></a>
+	
+	<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/lib/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+
+</body>
+</html>
